@@ -127,7 +127,7 @@ export default function Hero() {
           <div className="relative h-80 w-80 overflow-hidden rounded-full border-8 border-blue-600 shadow-2xl md:h-[450px] md:w-[450px]">
 
             <Image
-              src="/images/profile.jpg"
+              src="/images/profile.png"
               alt="Mayuresh Patil"
               fill
               priority
