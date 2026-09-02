@@ -79,6 +79,10 @@ export const metadata: Metadata = {
   },
 };
 
+/* =========================
+   JSON-LD STRUCTURED DATA
+   ========================= */
+
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
@@ -108,11 +112,6 @@ const personSchema = {
     "Core Web Vitals",
     "Schema Markup",
   ],
-
-  sameAs: [
-    "https://github.com/YOUR-GITHUB-USERNAME",
-    "https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME/",
-  ],
 };
 
 export default function RootLayout({
@@ -124,18 +123,27 @@ export default function RootLayout({
     <html lang="en">
       <body>
 
-        {/* JSON-LD Structured Data */}
+        {/* =========================
+            JSON-LD STRUCTURED DATA
+            ========================= */}
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(personSchema).replace(/</g, "\\u003c"),
+            __html: JSON.stringify(personSchema),
           }}
         />
 
-        {/* Website */}
+        {/* =========================
+            WEBSITE
+            ========================= */}
+
         {children}
 
-        {/* Google Analytics 4 */}
+        {/* =========================
+            GOOGLE ANALYTICS 4
+            ========================= */}
+
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-PPVMQ97SLK"
           strategy="afterInteractive"
@@ -144,7 +152,11 @@ export default function RootLayout({
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
-            function gtag(){window.dataLayer.push(arguments);}
+
+            function gtag(){
+              window.dataLayer.push(arguments);
+            }
+
             gtag('js', new Date());
 
             gtag('config', 'G-PPVMQ97SLK');
