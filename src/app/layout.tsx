@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import JsonLd from "@/components/JsonLd";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -24,6 +23,7 @@ export const metadata: Metadata = {
     "Google Search Console",
     "Google Analytics 4",
     "Core Web Vitals",
+    "Schema Markup",
   ],
 
   authors: [
@@ -73,10 +73,46 @@ export const metadata: Metadata = {
     title: "Mayuresh Patil | SEO Analyst & Frontend Developer",
 
     description:
-      "SEO Analyst and Frontend Developer specializing in Technical SEO, Next.js, React, Google Analytics 4, and website performance.",
+      "SEO Analyst and Frontend Developer specializing in Technical SEO, Next.js, React, Google Search Console, Google Analytics 4, and website performance.",
 
     images: ["/images/profile.png"],
   },
+};
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+
+  name: "Mayuresh Patil",
+
+  url: "https://mayureshpatil0310.in",
+
+  image: "https://mayureshpatil0310.in/images/profile.png",
+
+  jobTitle: "SEO Analyst & Frontend Developer",
+
+  description:
+    "SEO Analyst and Frontend Developer specializing in Technical SEO, Next.js, React, Google Search Console, Google Analytics 4, and website performance.",
+
+  knowsAbout: [
+    "Technical SEO",
+    "Google Search Console",
+    "Google Analytics 4",
+    "Next.js",
+    "React",
+    "JavaScript",
+    "TypeScript",
+    "HTML5",
+    "CSS3",
+    "Tailwind CSS",
+    "Core Web Vitals",
+    "Schema Markup",
+  ],
+
+  sameAs: [
+    "https://github.com/YOUR-GITHUB-USERNAME",
+    "https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME/",
+  ],
 };
 
 export default function RootLayout({
@@ -87,8 +123,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {/* Structured Data / JSON-LD */}
-        <JsonLd />
+
+        {/* JSON-LD Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(personSchema).replace(/</g, "\\u003c"),
+          }}
+        />
 
         {/* Website */}
         {children}
@@ -108,6 +150,7 @@ export default function RootLayout({
             gtag('config', 'G-PPVMQ97SLK');
           `}
         </Script>
+
       </body>
     </html>
   );
