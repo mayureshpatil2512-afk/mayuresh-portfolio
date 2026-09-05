@@ -31,11 +31,7 @@ export default function Hero() {
       <div className="mx-auto grid min-h-[90vh] max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-2">
 
         {/* LEFT SIDE */}
-        <motion.div
-          initial={{ opacity: 0, x: -40 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-        >
+        <div>
           <p className="text-xl font-semibold text-blue-600">
             👋 Hello, I am
           </p>
@@ -57,16 +53,15 @@ export default function Hero() {
           {/* BUTTONS */}
           <motion.div
             className="mt-10 flex flex-wrap gap-6"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
+            transition={{ duration: 0.5 }}
           >
-
             {/* HIRE ME */}
             <motion.a
               href="#contact"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.96 }}
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.98 }}
               className="rounded-xl bg-blue-600 px-8 py-4 font-semibold text-white shadow-lg transition hover:bg-blue-700"
             >
               Hire Me
@@ -81,13 +76,12 @@ export default function Hero() {
                   file_name: "resume.pdf",
                 })
               }
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.96 }}
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.98 }}
               className="rounded-xl border-2 border-blue-600 px-8 py-4 font-semibold text-blue-600 transition hover:bg-blue-50"
             >
               Download Resume
             </motion.a>
-
           </motion.div>
 
           {/* SOCIAL LINKS */}
@@ -95,7 +89,7 @@ export default function Hero() {
             className="mt-10 flex gap-5"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
           >
             <a
               href="https://github.com/"
@@ -115,27 +109,23 @@ export default function Hero() {
               LinkedIn
             </a>
           </motion.div>
-        </motion.div>
+        </div>
 
         {/* RIGHT SIDE */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="flex justify-center"
-        >
+        <div className="flex justify-center">
           <div className="relative h-80 w-80 overflow-hidden rounded-full border-8 border-blue-600 shadow-2xl md:h-[450px] md:w-[450px]">
-
             <Image
               src="/images/profile.png"
-              alt="Mayuresh Patil"
+              alt="Mayuresh Patil - SEO Analyst and Frontend Developer"
               fill
               priority
+              fetchPriority="high"
+              sizes="(max-width: 768px) 320px, 450px"
+              quality={80}
               className="object-cover"
             />
-
           </div>
-        </motion.div>
+        </div>
 
       </div>
     </section>
