@@ -17,6 +17,12 @@ export const metadata: Metadata = {
     "Google Search Console",
     "Google Analytics 4",
     "Core Web Vitals",
+    "JavaScript",
+    "TypeScript",
+    "Html",
+    "CSS3",
+    "Tailwind CSS",
+    "Schema Markup",
   ],
 
   authors: [
@@ -27,11 +33,11 @@ export const metadata: Metadata = {
 
   creator: "Mayuresh Patil",
 
-  metadataBase: new URL("https://mayureshpatil0310.in"),
+  metadataBase: new URL("https://www.mayureshpatil0310.in"),
 
-  alternates: {
-    canonical: "/",
-  },
+alternates: {
+  canonical: "https://www.mayureshpatil0310.in/",
+},
 
   openGraph: {
     title: "Mayuresh Patil | SEO Analyst & Frontend Developer",
