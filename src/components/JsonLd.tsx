@@ -30,8 +30,8 @@ export default function JsonLd() {
     ],
 
     sameAs: [
-      "https://github.com/YOUR-GITHUB-USERNAME",
-      "https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME/",
+      "https://github.com/mayureshpatil2512-afk",
+      "https://www.linkedin.com/in/Mayuresh Patil/",
     ],
   };
 
