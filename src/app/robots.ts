@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://mayureshpatil0310.in/sitemap.xml",
+    sitemap: "https://www.mayureshpatil0310.in/sitemap.xml",
   };
 }
