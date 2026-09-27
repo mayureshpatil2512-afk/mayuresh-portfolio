@@ -6,24 +6,33 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.mayureshpatil0310.in"),
 
   title: {
-    default: "Mayuresh Patil | SEO Analyst & Frontend Developer",
+    default: "Mayuresh Patil | SEO Analyst & Digital Marketing Executive",
     template: "%s | Mayuresh Patil",
   },
 
   description:
-    "Mayuresh Patil is an SEO Analyst and Frontend Developer specializing in Technical SEO, Next.js, React, Google Search Console, Google Analytics 4 and Core Web Vitals.",
+    "Mayuresh Patil is a B.Com. graduate and SEO Analyst with 1 year of experience in Social Media Marketing, SEO, Google Search Console, Google Analytics 4, keyword research and digital marketing.",
 
   keywords: [
     "Mayuresh Patil",
     "SEO Analyst",
-    "Frontend Developer",
+    "Digital Marketing Executive",
+    "Digital Marketing",
+    "Social Media Marketing",
+    "SEO",
+    "Keyword Research",
+    "On-Page SEO",
+    "Off-Page SEO",
     "Technical SEO",
-    "Next.js Developer",
-    "React Developer",
     "Google Search Console",
     "Google Analytics 4",
-    "Core Web Vitals",
-    "Schema Markup",
+    "Google Business Profile",
+    "SEO Content Optimization",
+    "Competitor Analysis",
+    "Social Media Management",
+    "Meta Business Suite",
+    "Canva",
+    "SEO Reporting",
   ],
 
   authors: [
@@ -44,10 +53,10 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Mayuresh Patil | SEO Analyst & Frontend Developer",
+    title: "Mayuresh Patil | SEO Analyst & Digital Marketing Executive",
 
     description:
-      "SEO Analyst and Frontend Developer specializing in Technical SEO, Next.js, React, Google Search Console, Google Analytics 4 and Core Web Vitals.",
+      "B.Com. graduate with 1 year of experience in Social Media Marketing, SEO and Digital Marketing.",
 
     url: "https://www.mayureshpatil0310.in/",
 
@@ -62,7 +71,7 @@ export const metadata: Metadata = {
         url: "/images/profile.png",
         width: 800,
         height: 800,
-        alt: "Mayuresh Patil - SEO Analyst & Frontend Developer",
+        alt: "Mayuresh Patil - SEO Analyst & Digital Marketing Executive",
       },
     ],
   },
@@ -70,10 +79,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "Mayuresh Patil | SEO Analyst & Frontend Developer",
+    title: "Mayuresh Patil | SEO Analyst & Digital Marketing Executive",
 
     description:
-      "SEO Analyst and Frontend Developer specializing in Technical SEO, Next.js, React and Core Web Vitals.",
+      "B.Com. graduate with 1 year of experience in Social Media Marketing, SEO and Digital Marketing.",
 
     images: ["/images/profile.png"],
   },
@@ -93,29 +102,30 @@ const personSchema = {
 
   image: "https://www.mayureshpatil0310.in/images/profile.png",
 
-  jobTitle: "SEO Analyst & Frontend Developer",
+  jobTitle: "SEO Analyst & Digital Marketing Executive",
 
   description:
-    "Mayuresh Patil is an SEO Analyst and Frontend Developer specializing in Technical SEO, Next.js, React, Google Search Console, Google Analytics 4 and Core Web Vitals.",
+    "Mayuresh Patil is a B.Com. graduate and SEO Analyst with 1 year of experience in Social Media Marketing, SEO and Digital Marketing.",
 
   knowsAbout: [
+    "SEO",
+    "Keyword Research",
+    "On-Page SEO",
+    "Off-Page SEO",
     "Technical SEO",
     "Google Search Console",
     "Google Analytics 4",
-    "Next.js",
-    "React",
-    "JavaScript",
-    "TypeScript",
-    "HTML5",
-    "CSS3",
-    "Tailwind CSS",
-    "Core Web Vitals",
-    "Schema Markup",
-  ],
-
-  sameAs: [
-    "https://github.com/",
-    "https://www.linkedin.com/",
+    "Google Business Profile",
+    "SEO Content Optimization",
+    "Competitor Analysis",
+    "Social Media Marketing",
+    "Social Media Management",
+    "Meta Business Suite",
+    "Content Planning",
+    "Canva",
+    "Excel",
+    "SEO Reporting",
+    "Digital Marketing",
   ],
 };
 
@@ -127,7 +137,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-
         {/* JSON-LD Structured Data */}
         <script
           type="application/ld+json"
@@ -158,7 +167,6 @@ export default function RootLayout({
             gtag('config', 'G-PPVMQ97SLK');
           `}
         </Script>
-
       </body>
     </html>
   );

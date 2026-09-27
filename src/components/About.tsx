@@ -1,3 +1,5 @@
+import { skills } from "@/data/skills";
+
 export default function About() {
   return (
     <section
@@ -6,6 +8,8 @@ export default function About() {
     >
       <div className="mx-auto max-w-7xl px-6">
 
+        {/* Section Heading */}
+
         <div className="mb-16 text-center">
 
           <h2 className="text-4xl font-bold text-gray-900">
@@ -13,8 +17,8 @@ export default function About() {
           </h2>
 
           <p className="mt-4 text-lg text-gray-600">
-            Passionate about SEO, modern web development and
-            creating fast, accessible websites.
+            B.Com. graduate with experience in Social Media Marketing,
+            SEO and Digital Marketing.
           </p>
 
         </div>
@@ -30,15 +34,18 @@ export default function About() {
             </h3>
 
             <p className="mt-6 leading-8 text-gray-600">
+              I am a B.Com. graduate and SEO Analyst with 1 year of
+              experience in Social Media Marketing and Digital Marketing.
+              I have hands-on knowledge of SEO, keyword research,
+              on-page SEO, off-page SEO, Google Search Console and
+              Google Analytics 4.
+            </p>
 
-              I am an aspiring SEO Analyst and Frontend Developer
-              learning Technical SEO, Google Search Console,
-              Google Analytics 4, React, Next.js and performance
-              optimization.
-
-              My goal is to build websites that are fast,
-              user-friendly and rank well on search engines.
-
+            <p className="mt-5 leading-8 text-gray-600">
+              I am interested in helping businesses improve their online
+              visibility through search engine optimization, social media
+              marketing, content optimization and data-driven digital
+              marketing strategies.
             </p>
 
             <div className="mt-10 grid grid-cols-2 gap-4">
@@ -50,8 +57,8 @@ export default function About() {
                 </h4>
 
                 <p className="mt-2 text-lg font-medium text-black">
-  Projects
-</p>
+                  Projects
+                </p>
 
               </div>
 
@@ -62,32 +69,32 @@ export default function About() {
                 </h4>
 
                 <p className="mt-2 text-lg font-medium text-black">
-  Certifications
-</p>
+                  Certifications
+                </p>
 
               </div>
 
               <div className="rounded-xl bg-blue-50 p-5">
 
                 <h4 className="text-4xl font-bold text-blue-600">
-                  1000+
+                  1+
                 </h4>
 
                 <p className="mt-2 text-lg font-medium text-slate-900">
-  Learning Hours
-</p>
+                  Years Experience
+                </p>
 
               </div>
 
               <div className="rounded-xl bg-blue-50 p-5">
 
                 <h4 className="text-4xl font-bold text-blue-600">
-                  Fresher
+                  B.Com.
                 </h4>
 
                 <p className="mt-2 text-lg font-medium text-slate-900">
-  Experience
-</p>
+                  Education
+                </p>
 
               </div>
 
@@ -105,29 +112,13 @@ export default function About() {
 
             <div className="mt-8 flex flex-wrap gap-4">
 
-              {[
-                "Technical SEO",
-                "Google Search Console",
-                "Google Analytics 4",
-                "Next.js",
-                "React",
-                "HTML5",
-                "CSS3",
-                "JavaScript",
-                "Tailwind CSS",
-                "Core Web Vitals",
-                "Schema Markup",
-                "Git",
-                "GitHub",
-              ].map((skill) => (
-
+              {skills.map((skill) => (
                 <span
                   key={skill}
                   className="rounded-full bg-blue-100 px-5 py-2 font-medium text-blue-700"
                 >
                   {skill}
                 </span>
-
               ))}
 
             </div>
@@ -140,22 +131,3 @@ export default function About() {
     </section>
   );
 }
-                    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

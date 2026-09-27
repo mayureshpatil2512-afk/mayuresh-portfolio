@@ -32,6 +32,7 @@ export default function Hero() {
 
         {/* LEFT SIDE */}
         <div>
+
           <p className="text-xl font-semibold text-blue-600">
             👋 Hello, I am
           </p>
@@ -41,13 +42,15 @@ export default function Hero() {
           </h1>
 
           <h2 className="mt-5 text-3xl font-semibold text-slate-700">
-            SEO Analyst & Frontend Developer
+            SEO Analyst & Digital Marketing Executive
           </h2>
 
           <p className="mt-10 max-w-3xl text-lg leading-8 text-slate-600">
-            I build fast, SEO-optimized websites using Next.js,
-            React, Technical SEO, Google Search Console,
-            Google Analytics 4, and Core Web Vitals.
+            B.Com. graduate with 1 year of experience in Social Media
+            Marketing and Digital Marketing. I work with SEO, keyword
+            research, Google Search Console, Google Analytics 4,
+            content optimization, social media management and
+            competitor analysis.
           </p>
 
           {/* BUTTONS */}
@@ -57,6 +60,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
+
             {/* HIRE ME */}
             <motion.a
               href="#contact"
@@ -82,6 +86,7 @@ export default function Hero() {
             >
               Download Resume
             </motion.a>
+
           </motion.div>
 
           {/* SOCIAL LINKS */}
@@ -91,6 +96,7 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
+
             <a
               href="https://github.com/"
               target="_blank"
@@ -108,15 +114,19 @@ export default function Hero() {
             >
               LinkedIn
             </a>
+
           </motion.div>
+
         </div>
 
         {/* RIGHT SIDE */}
         <div className="flex justify-center">
+
           <div className="relative h-80 w-80 overflow-hidden rounded-full border-8 border-blue-600 shadow-2xl md:h-[450px] md:w-[450px]">
+
             <Image
               src="/images/profile.png"
-              alt="Mayuresh Patil - SEO Analyst and Frontend Developer"
+              alt="Mayuresh Patil - SEO Analyst and Digital Marketing Executive"
               fill
               priority
               fetchPriority="high"
@@ -124,7 +134,9 @@ export default function Hero() {
               quality={80}
               className="object-cover"
             />
+
           </div>
+
         </div>
 
       </div>

@@ -15,7 +15,7 @@ export default function Skills() {
           </h2>
 
           <p className="mt-4 text-lg text-slate-600">
-            Technologies and tools I use to build modern websites.
+            Skills and tools I use for SEO, Digital Marketing and Social Media Marketing.
           </p>
 
         </div>
@@ -25,24 +25,7 @@ export default function Skills() {
           {skills.map((skill) => (
             <span
               key={skill}
-              className="
-                rounded-full
-                border
-                border-blue-100
-                bg-white
-                px-6
-                py-3
-                font-medium
-                text-slate-700
-                shadow-sm
-                transition
-                duration-300
-                hover:-translate-y-1
-                hover:border-blue-300
-                hover:bg-blue-600
-                hover:text-white
-                hover:shadow-md
-              "
+              className="rounded-full bg-blue-100 px-6 py-4 text-xl font-medium text-blue-700 transition hover:bg-blue-200"
             >
               {skill}
             </span>

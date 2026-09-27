@@ -13,44 +13,47 @@ export const projects: Project[] = [
     id: 1,
     title: "SEO Portfolio Website",
     description:
-      "Professional portfolio built using Next.js, Tailwind CSS and Technical SEO best practices.",
+      "Personal professional portfolio focused on SEO, digital presence, website performance, structured data, Google Search Console and Google Analytics 4.",
     technologies: [
-      "Next.js",
-      "React",
-      "Tailwind CSS",
-      "TypeScript",
-      "SEO"
+      "SEO",
+      "Google Search Console",
+      "Google Analytics 4",
+      "Schema Markup",
+      "Core Web Vitals",
     ],
     github: "https://github.com/",
-    live: "https://example.com",
+    live: "https://www.mayureshpatil0310.in/",
     image: "/images/projects/portfolio.png",
   },
 
   {
     id: 2,
-    title: "Google Search Console Audit",
+    title: "Google Search Console SEO Audit",
     description:
-      "Technical SEO audit demonstrating indexing, sitemap submission and performance improvements.",
+      "SEO audit project covering indexing, sitemap configuration, robots.txt, canonical URLs, structured data, search performance and technical SEO checks.",
     technologies: [
-      "SEO",
-      "GSC",
-      "Schema",
-      "Core Web Vitals"
+      "Technical SEO",
+      "Google Search Console",
+      "Sitemap",
+      "Robots.txt",
+      "Schema Markup",
+      "Core Web Vitals",
     ],
     github: "https://github.com/",
-    live: "https://example.com",
+    live: "https://www.mayureshpatil0310.in/",
     image: "/images/projects/seo-audit.png",
   },
 
   {
     id: 3,
-    title: "Power BI Dashboard",
+    title: "Business Analytics Dashboard",
     description:
-      "Interactive dashboard with business KPIs and data visualization.",
+      "Interactive business dashboard focused on presenting KPIs, trends and business insights using data visualization and reporting tools.",
     technologies: [
       "Power BI",
-      "SQL",
-      "Excel"
+      "Microsoft Excel",
+      "Data Visualization",
+      "Business Analytics",
     ],
     github: "https://github.com/",
     live: "https://example.com",
