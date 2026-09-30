@@ -34,19 +34,25 @@ export default function About() {
             </h3>
 
             <p className="mt-6 leading-8 text-gray-600">
-              I am a B.Com. graduate and SEO Analyst with 1 year of
-              experience in Social Media Marketing and Digital Marketing.
-              I have hands-on knowledge of SEO, keyword research,
-              on-page SEO, off-page SEO, Google Search Console and
-              Google Analytics 4.
-            </p>
+  I am Mayuresh Patil, a B.Com. graduate and SEO Analyst with 1 year
+  of experience in Social Media Marketing and Digital Marketing. My
+  work focuses on improving website visibility, search performance
+  and online presence through practical SEO and digital marketing
+  activities.
+</p>
 
-            <p className="mt-5 leading-8 text-gray-600">
-              I am interested in helping businesses improve their online
-              visibility through search engine optimization, social media
-              marketing, content optimization and data-driven digital
-              marketing strategies.
-            </p>
+<p className="mt-5 leading-8 text-gray-600">
+  I have hands-on experience with keyword research, on-page SEO,
+  off-page SEO, technical SEO, Google Search Console, Google
+  Analytics 4, Google Business Profile, SEO content optimization,
+  competitor analysis and social media management.
+</p>
+
+<p className="mt-5 leading-8 text-gray-600">
+  I am interested in helping businesses build a stronger digital
+  presence through search engine optimization, content strategy,
+  social media marketing and data-driven digital marketing.
+</p>
 
             <div className="mt-10 grid grid-cols-2 gap-4">
 

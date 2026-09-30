@@ -46,12 +46,13 @@ export default function Hero() {
           </h2>
 
           <p className="mt-10 max-w-3xl text-lg leading-8 text-slate-600">
-            B.Com. graduate with 1 year of experience in Social Media
-            Marketing and Digital Marketing. I work with SEO, keyword
-            research, Google Search Console, Google Analytics 4,
-            content optimization, social media management and
-            competitor analysis.
-          </p>
+  B.Com. graduate and SEO Analyst with 1 year of experience in Social
+  Media Marketing and Digital Marketing. I work on search engine
+  optimization, keyword research, Google Search Console, Google
+  Analytics 4, content optimization, social media management and
+  competitor analysis to improve online visibility and digital
+  presence.
+</p>
 
           {/* BUTTONS */}
           <motion.div

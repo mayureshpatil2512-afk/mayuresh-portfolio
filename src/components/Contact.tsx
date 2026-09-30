@@ -93,7 +93,7 @@ export default function Contact() {
                 </h4>
 
                 <p className="mt-1 text-gray-700">
-                  +91 9876543210
+                  +91 9370016785
                 </p>
 
               </div>
@@ -105,7 +105,7 @@ export default function Contact() {
                 </h4>
 
                 <p className="mt-1 text-gray-700">
-                  Pune, Maharashtra, India
+                  Kolhapur, Maharashtra, India
                 </p>
 
               </div>
