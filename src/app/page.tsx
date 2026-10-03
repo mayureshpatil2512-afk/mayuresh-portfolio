@@ -11,13 +11,17 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <About />
-      <Expertise />
-      <Skills />
-      <Projects />
-      <Contact/>
-      <Footer/>
+
+<main>
+  <Hero />
+  <About />
+  <Expertise />
+  <Skills />
+  <Projects />
+  <Contact />
+</main>
+
+<Footer />
     </>
   );
 }
