@@ -11,7 +11,6 @@ export default function Home() {
   return (
     <>
       <Navbar />
-
 <main>
   <Hero />
   <About />
@@ -20,7 +19,6 @@ export default function Home() {
   <Projects />
   <Contact />
 </main>
-
 <Footer />
     </>
   );

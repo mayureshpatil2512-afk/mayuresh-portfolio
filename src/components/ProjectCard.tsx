@@ -1,68 +1,67 @@
-import { Project } from "@/data/projects";
+import Image from "next/image";
+import type { Project } from "@/data/projects";
 
 interface ProjectCardProps {
   project: Project;
 }
 
-export default function ProjectCard({
-  project,
-}: ProjectCardProps) {
+export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <div className="rounded-xl bg-white shadow-lg overflow-hidden hover:shadow-2xl transition">
-
-      <div className="h-52 bg-gray-200 flex items-center justify-center">
-
-        <span className="text-gray-500">
-          Project Image
-        </span>
-
+    <article className="overflow-hidden rounded-2xl bg-white shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+      <div className="relative h-56 w-full bg-slate-100">
+        <Image
+          src={project.image}
+          alt={`${project.title} - Mayuresh Patil SEO and Digital Marketing project`}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          className="object-cover"
+        />
       </div>
 
       <div className="p-6">
+        <h3 className="text-xl font-bold text-slate-900">
+          {project.title}
+        </h3>
 
-        <h3 className="text-2xl font-bold text-slate-900">
-  {project.title}
-</h3>
-
-        <p className="mt-4 text-gray-600">
+        <p className="mt-4 leading-7 text-slate-600">
           {project.description}
         </p>
 
-        <div className="mt-6 flex flex-wrap gap-2">
-
-          {project.technologies.map((tech) => (
+        <div className="mt-5 flex flex-wrap gap-2">
+          {project.technologies.map((technology) => (
             <span
-              key={tech}
-              className="rounded-full bg-blue-100 px-3 py-1 text-sm text-blue-700"
+              key={technology}
+              className="rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-700"
             >
-              {tech}
+              {technology}
             </span>
           ))}
-
         </div>
 
-        <div className="mt-8 flex gap-4">
+        <div className="mt-6 flex flex-wrap gap-3">
+          {project.github && (
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-lg bg-blue-600 px-5 py-2 text-sm font-semibold text-white transition hover:bg-blue-700"
+            >
+              GitHub
+            </a>
+          )}
 
-          <a
-            href={project.github}
-            target="_blank"
-            className="rounded-lg bg-blue-600 px-5 py-2 text-white"
-          >
-            GitHub
-          </a>
-
-          <a
-            href={project.live}
-            target="_blank"
-            className="rounded-lg border border-blue-600 px-5 py-2 text-blue-600"
-          >
-            Live Demo
-          </a>
-
+          {project.live && (
+            <a
+              href={project.live}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-lg border border-blue-600 px-5 py-2 text-sm font-semibold text-blue-600 transition hover:bg-blue-50"
+            >
+              Live Demo
+            </a>
+          )}
         </div>
-
       </div>
-
-    </div>
+    </article>
   );
 }
